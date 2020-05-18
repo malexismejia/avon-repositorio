@@ -14,7 +14,7 @@ $password='etps1@@1234';
 $conexion=new mysqli($hostname,$username,$password,$database);
 if($conexion->connect_error){
     printf($connect_error);
-    echo "El sitio web está experimentado problemas";
+    echo "El sitio web está experimentado problemas",$connect_error;
 }else{
     echo "Exito";
 }
